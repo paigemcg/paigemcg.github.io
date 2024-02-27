@@ -1,0 +1,32 @@
+#narrowScreen{
+    background-color: purple;
+    @media screen and (min-width: 600px) {
+        
+          background-color: green;
+    }
+    
+}
+
+
+#wideScreen{
+    background-color: lightblue;
+    @media screen and (max-width: 800px) {
+         
+          background-color: red;}
+        
+
+}
+#shortScreen{
+    background-color: yellow;
+    @media screen and (min-height: 500px) {
+         
+          background-color: turquoise;}
+    
+}
+#tallScreen{
+    background-color: orange;
+    @media screen and (min-height: 800px) {
+         
+          background-color: lavender;}
+
+}
