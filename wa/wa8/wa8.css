@@ -1,0 +1,90 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: navy;
+    font-family: 'Times New Roman', serif;
+}
+
+#welcome{
+    color: aliceblue;
+    font-size: 25px;
+}
+
+#snuff{
+    color: aliceblue;
+    font-size: 15px;
+}
+
+nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: green;
+    border-radius: 10px;
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:aliceblue;
+}
+  
+#pics img {
+    top: 400px;
+    position: relative;
+    border-radius: 10px;
+    width: 30vh;
+}
+
+/*#top:hover {
+	animation-name: fade;
+	animation-timing-function: ease-in-out;
+	/*animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-direction: alternate;
+}
+*/
+
+#pics #top{
+    display: none;
+    position: absolute;
+}
+#pics #top:hover{
+    display: block; 
+}
+#pics #bottom:hover {
+    opacity: 0; 
+}
+
+@keyframes fade {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+/*img{
+    margin: 4px;
+    width:45vw;
+    height: auto;
+}*/
+
+#red-ball{
+    background-color: crimson;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+}
