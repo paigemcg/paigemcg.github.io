@@ -1,0 +1,53 @@
+h1 {
+    font-family: Georgia;
+    text-align: center;
+}
+p{
+    text-align: center;
+    color: violet;
+}
+  
+  body {
+    width: 640px;
+    margin: 0 auto;
+    font-family: Georgia;
+    color: green;
+    background: azure;
+}
+  
+  .full-img {
+    position: relative;
+    display: block;
+    width: 640px;
+    height: 480px;
+}
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 640px;
+    height: 480px;
+    background-color: rgba(0,0,0,0);
+}
+  
+  button {
+    color: blue;
+    font-size: 20px;
+    border: 0;
+    background: rgba(184, 229, 248, 0.6);
+    text-shadow: 1px 1px 1px white;
+    border: 5px solid #84b7f2;
+    border-radius: 5px;
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    left: 5px;
+  }
+  
+  .thumb-bar img {
+    display: block;
+    width: 20%;
+    float: left;
+    cursor: pointer;
+}
