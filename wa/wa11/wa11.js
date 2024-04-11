@@ -7,7 +7,7 @@ const overlay = document.querySelector('.overlay');
 /* Declaring the array of image filenames */
 
 
-const alts = ['a beach at sunset with a pier in the distance.', 'a black and white cat laying in the floor.', 'two bunches of daisies', 'a river running through Utah.', 'a sunset in a neighborhood.'];
+const alts = ['a beach at sunset with a pier in the distance.', 'a black and white cat laying in the floor.', 'two bunches of daisies.', 'a river running through Utah.', 'a sunset in a neighborhood.'];
 
 /* img loop access */
 function thumbnailLoop() {
