@@ -20,7 +20,7 @@ function randomRGB() {
 
 
 function loop(){
-    ctx.fillStyle = "rgb(0 0 0 / 25%)";
+    ctx.fillStyle = "rgb(0 0 0 / 50%)";
     ctx.fillRect(0,0, width, height);
 
     for (const ball of balls){
@@ -70,7 +70,7 @@ class Ball {
        }
 
        this.x += this.velX;
-       this.y += this.velY
+       this.y += this.velY;
     }
 
     collisionDetect(){
@@ -81,15 +81,30 @@ class Ball {
                 const distance = Math.sqrt(dx * dx * dy * dy)
 
                 if (distance < this.size + ball.size){
-                    this.velX *= -1
-                    //ball.velY = this.velY *= -1
-                    //ball.velY = this.velY = velY.abs(this.velY)
+                        this.velX = -(this.velX);
+                    
+                        this.velY = -(this.velY);
+                    
+                }
+  
+                //if (distance < this.size + ball.size){
+        
+                    //this.velX = random(-10,10)
                     //ball.velX = this.velX = random(-10,10);
                     //ball.velY = this.velY = random(-10,10);
-                    //this.x += this.velX;
-                    //this.y -= this.velY
                     //ball.color = this.color = randomRGB;
-                }
+                   // if ((this.x + this.size) = collide){
+                        //this.velX = -(this.velX);
+                //   }
+            
+            
+                 //  if ((this.y + this.size) >= collide){
+                       // this.velY = -(this.velY);
+                 //  }
+            
+                   //this.x += this.velX;
+                   //this.y += this.velY
+                //}
             }
         }
     }
@@ -97,7 +112,7 @@ class Ball {
 
 const balls = [];
 
-while (balls.length < 25){
+while (balls.length < 15){
     const size = random(1,20);
     const ball = new Ball (
         random(0 + size, width - size),
