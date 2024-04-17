@@ -20,7 +20,7 @@ function randomRGB() {
 
 
 function loop(){
-    ctx.fillStyle = "rgb(0 0 0 / 50%)";
+    ctx.fillStyle = "rgb(0 0 0 / 35%)";
     ctx.fillRect(0,0, width, height);
 
     for (const ball of balls){
@@ -81,9 +81,9 @@ class Ball {
                 const distance = Math.sqrt(dx * dx * dy * dy)
 
                 if (distance < this.size + ball.size){
-                        this.velX = -(this.velX);
+                    this.velX = -(this.velX);
                     
-                        this.velY = -(this.velY);
+                    this.velY = -(this.velY);
                     
                 }
   
@@ -112,7 +112,7 @@ class Ball {
 
 const balls = [];
 
-while (balls.length < 15){
+while (balls.length < 25){
     const size = random(1,20);
     const ball = new Ball (
         random(0 + size, width - size),
