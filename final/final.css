@@ -1,0 +1,140 @@
+
+*, *:before, *:after {
+    box-sizing: inherit; 
+}
+  
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    background: url("flower.png")
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Amatic SC", cursive;
+}
+
+.start{
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 0px;
+  text-shadow: 2px 2px 1px #E55248;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #49438D;
+    text-shadow: 2px 2px 1px white;
+    margin-top: 0%;
+    margin-bottom: -1px;
+}
+
+footer {
+    text-align: center;
+    font-size: 3rem;
+    color: rgba(1, 186, 10, 0.805);
+}
+
+.score {
+  color: #E55248;
+  margin-top: 0%;
+  text-shadow: 2px 2px 1px white;
+}
+
+.game {
+  width: 800px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3% auto;
+
+}
+
+.hole {
+  flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hole:after {
+  display: block;
+  background: url(Krust.png) bottom center no-repeat;
+  background-size: contain;
+  content: '';
+  width: 75%;
+  height:100px;
+  position: absolute;
+  z-index: 2;
+  bottom: -15px;
+}
+
+.mole {
+  background: url('itHim.png') bottom center no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition:all 0.4s ease;
+}
+
+.hole.up .mole {
+  top: 0;
+}
+
+button{
+  background: rgba(198, 245, 255, 0.518);
+  font-family:'Gill Sans', sans-serif;
+  font-size: 2rem;
+  margin-top: -5px;
+  margin-bottom: 1px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 10px;
+  cursor: pointer; 
+  outline: none;
+  color: #fff;
+  background-color: #D973C1;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 5px lightgrey;
+}
+
+button:hover {background-color: #f39ade}
+
+button:active {
+background-color: #f39ade;
+box-shadow: 2px 5px lightgrey;
+transform: translateY(4px);
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 6;
+    cursor: pointer;
+}
+  
+.vid{
+    position: relative;
+    width: 1000px;
+    height: 800px;
+    top: 25%;
+    left: 30%;
+    right: 30%;
+    bottom: 0;
+}
